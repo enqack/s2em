@@ -44,10 +44,12 @@ $txt['s2em_enable_sub'] = "Enable the EveDev Killboard link in the SMF2 main men
 $txt['s2em_insert_after'] = "Insert SMF2 EDK Menu after what item?";
 $txt['s2em_insert_after_sub'] = "Example: home";
 $txt['s2em_tea_intigration'] = "Enable Characters List.";
-$txt['s2em_tea_intigration_sub'] = "Enable a list of characters in the menu's sub options ". 
-	" that links to thier pilot details page on the killboard. <a href='http://code.google.com/p/temars-eve-api/'>Requires Temars API Registration Mod</a>";
+$txt['s2em_tea_intigration_sub'] = "Enable a list of characters in the menu's sub options " . 
+			" that links to thier pilot details page on the killboard. " .
+			"<a href='http://code.google.com/p/temars-eve-api/'>Requires Temars EVE API Registration Mod</a>";
 $txt['s2em_approved_corps'] = "Corporations";
-$txt['s2em_approved_corps_sub'] = "Corporation names a character needs to be in to show up in submenu.<br /> One corp per line; Leave blank for all.";
+$txt['s2em_approved_corps_sub'] = "Corporation names a character needs to be in to show up in submenu.<br />" .
+			" One corp per line; Leave blank for all.";
 $txt['s2em_killboard_url'] = "Killboard URL";
 $txt['s2em_killboard_url_sub'] = "Example: http://kb.evecorp.org";
 

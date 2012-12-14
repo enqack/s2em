@@ -60,9 +60,9 @@ function KillboardMenuLinks(&$buttons) {
 					),
 				);
 
-	// if not a guest and Temars Eve Api intigration is on create the character details links
+	// if not a guest and Temars Eve API integration is on create the character details links
 	if( !$context['user']['is_guest'] && $modSettings['s2em_tea_intigration']) {
-		// if tea is not instinated do so
+		// if tea is not instantiated do so
 		if( !is_object($tea))
 			require_once(dirname(__FILE__) . '/TEA.php');
 
@@ -70,8 +70,6 @@ function KillboardMenuLinks(&$buttons) {
 		$all_chars = $tea->get_all_chars($context['user']['id']);
 		$approved_corps = explode("\n",$modSettings['s2em_approved_corps']);
 		array_walk($approved_corps, trim_escapecodes);  // clean up textarea artifacts
-
-		//$corp_chars = array();
 
 		foreach( $all_chars as $charID => $info ) {
 			if( in_array($info[2], $approved_corps, true ) ) {
@@ -94,7 +92,7 @@ function KillboardMenuLinks(&$buttons) {
 
 	}
 
-	// insert menu after 'home' or otherwised specified
+	// insert menu after 'home' or otherwise specified location
 	$fnd = 0;
 	$insert_after = !empty($modSettings['s2em_insert_after']) ? $modSettings['s2em_insert_after'] : 'home';
 	reset($buttons);
