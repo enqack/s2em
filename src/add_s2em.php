@@ -1,7 +1,7 @@
 <?php
 /** 
  * \package SMF2 EDK Killboard Menu (s2em)
- * \file remove_s2em.php
+ * \file add_s2em.php
  * \version 1.0.0
  * \author Steve Verhelle
  * \date 2012-12-12
