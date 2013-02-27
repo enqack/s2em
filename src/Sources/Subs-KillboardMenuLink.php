@@ -69,7 +69,7 @@ function KillboardMenuLinks(&$buttons) {
 		// get characters on eve account that are in approved corps
 		$all_chars = $tea->get_all_chars($context['user']['id']);
 		$approved_corps = explode("\n",$modSettings['s2em_approved_corps']);
-		array_walk($approved_corps, trim_escapecodes);  // clean up textarea artifacts
+		array_walk($approved_corps, 'trim_escapecodes');  // clean up textarea artifacts
 
 		foreach( $all_chars as $charID => $info ) {
 			if( in_array($info[2], $approved_corps, true ) ) {
